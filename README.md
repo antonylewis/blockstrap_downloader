@@ -10,7 +10,7 @@ There are quite a few endpoints provided, which are listed here: http://blockstr
 
 This wrapper uses the "block height" endpoint: https://api.blockstrap.com/v0/BTC/block/height/1 (first block)
 
-It asks for data, block by block, in order from the first "genesis" block through to the latest block, parses the JSON response, and stores relevant data down into a small database, which by default is 'database.db'.
+It asks for data, block by block, in order from the first "genesis" block through to the latest block, parses the JSON response, and stores relevant data down into a small database, which by default is 'blockchain.db'.
 
 Currently I'm interested in the data from the blocks, rather than specific transaction data, so I'm only storing block level data (main chain blocks only, though if there are orphans, this notes the number of orphans at each block height)
 
