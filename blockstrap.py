@@ -1,3 +1,5 @@
+# Tested on Python 2.7.6 on Max OS X 10 (Yosemite)
+
 # Inbuilt
 import sys
 import datetime

@@ -1,5 +1,5 @@
 # Blockstrap Downloader
-Blockstrap downloader is a Python wrapper for the Blockstrap blockchain API
+Blockstrap downloader is a Python 2.7 wrapper for the Blockstrap blockchain API
 
 ## Description
 Blockstrap downloader downloads data about Bitcoin blocks and stores them in a SQLite database on your computer.  You can then do what you want with it, like make charts etc.
@@ -18,6 +18,9 @@ Currently I'm interested in the data from the blocks, rather than specific trans
 It takes quite a while!  It uses the anonymous API, which limits to one request per second.  Currently there are over 360,000 blocks in the Bitcoin Blockchain, so expect this to take over 100 hours.
 
 ## Dependencies
+
+This has been tested on Tested on Python 2.7.6 on Max OS X 10 (Yosemite).
+
 Here are the dependencies that don't already come with Python:
 
 dataset # https://dataset.readthedocs.org/en/latest/api.html
