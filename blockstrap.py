@@ -38,9 +38,7 @@ def connect_to_db(filename):
 def create_blocks_table(db, table_name):
 	# Create the blocks table if it doesn't exist
 	if table_name not in db.tables:
-		t = db.create_table(table_name)
-
-		t.create_column('height', sqlalchemy.Integer)
+		t = db.create_table(table_name, primary_id='height', primary_type='Integer')
 		t.create_column('time', sqlalchemy.Integer)
 		t.create_column('tx_count', sqlalchemy.Integer)
 		t.create_column('size', sqlalchemy.Integer)
@@ -51,7 +49,6 @@ def create_blocks_table(db, table_name):
 		t.create_column('orphans', sqlalchemy.Integer)
 		t.create_column('destroyed_satoshi_seconds', sqlalchemy.Integer)
 		t.create_column('version', sqlalchemy.Integer)
-
 	else:
 		t = db[table_name]
 	return t
