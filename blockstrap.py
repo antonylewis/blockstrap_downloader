@@ -130,6 +130,8 @@ def store_block_data(blocks_table, start_height, num_of_blocks):
 
 		else:
 			print time.strftime('%Y-%m-%d %H:%M:%S %Z'), 'Failed with status code:', r.status_code, url
+			print 'Waiting 1 minute'
+			time.sleep(59) # for when you get to the top block.  Beware, you may not be getting the main chain.
 
 		time.sleep(WAIT_TIME)
 
