@@ -53,7 +53,7 @@ def create_blocks_table(db, table_name):
 		t.create_column('version', sqlalchemy.Integer)
 
 	else:
-		t = db['blocks']
+		t = db[table_name]
 	return t
 
 def how_many_blocks_to_add():
