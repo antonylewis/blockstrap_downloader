@@ -17,6 +17,8 @@ Currently I'm interested in the data from the blocks, rather than specific trans
 # Warning!
 It takes quite a while!  It uses the anonymous API, which limits to one request per second.  Currently there are over 360,000 blocks in the Bitcoin Blockchain, so expect this to take over 100 hours.
 
+Also there are some issues at the top of the blockchain, for example for most recent blocks there is a risk that you're not storing down the main chain (as the main chain is undefined).  To do: Make this stop 6 blocks from the tiop.
+
 ## Dependencies
 
 This has been tested on Tested on Python 2.7.6 on Max OS X 10 (Yosemite).
