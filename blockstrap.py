@@ -77,7 +77,7 @@ def get_next_block_height(db, table_name):
 	print 'Max block height found in database:', max_height
 
 	if max_height is None:
-		start_height = 1
+		start_height = 0
 	else:
 		start_height = max_height + 1
 	return start_height
